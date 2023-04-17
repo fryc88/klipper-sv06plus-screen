@@ -56,6 +56,7 @@ File more likely does not exist, so you must add this repo at the end of file
 ```sh
 https://github.com/gbkwiatt/klipper
 ```
+[![kiauh1](img/kiauh1.png)]
 [kiauh1]
 
 To save after making changes you press CTRL + X, it will ask if you want to save modified buffer and you confirm by pressing Y on keyboard.
