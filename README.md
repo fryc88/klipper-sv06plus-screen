@@ -195,6 +195,10 @@ Switch off printer, unplug and remove screen, then unscrew 4 socket cap screws o
 
 ![screen3](img/screen3.png)
 
+SV01 Pro screen is nearly identical & based on same chip
+
+![screen7](img/screen7.png)
+
 Connect the screen back, turn on the printer and after a few seconds you will see a blue screen showing files that are being flashed. It might take up to a few minutes, so be patient. As the last step you should see Flash CRC32 check: 000, it means it's done. You can switch off the printer, remove the microSD card from the screen, reinstall the back plate and attach it back to the printer.
 
 ![screen4](img/screen4.png)
