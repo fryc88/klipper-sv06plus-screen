@@ -208,42 +208,42 @@ Head back to your web browser and open your GUI. Printer should be back on and v
 
 Head to Machine > printer.cfg file. You need to add screen settings there. These parameters are quite correct for SV06 Plus, however I will review it later, just use these for now:
 >[t5uid1]
-firmware: dgus_reloaded
-update_interval: 1
-machine_name: Sovol SV06 Plus
-#How often to send data updates to the touchscreen.#volume: 75
-brightness: 80
-#The brightness for the touchscreen (as a value from 0 to 100).
-#boot_sound:
-#The index of the sound to play when booting. Defaults to being provided by
-#the selected firmware.
-#notification_sound:
-#The index of the sound to play when certain events happened. Defaults to
-#being provided by the selected firmware.
-x_min_inset: 0
-#The distance (in mm) from the minimum X position used by the manual leveling
-#screen.
-x_max_inset: 300
-#The distance (in mm) from the maximum X position used by the manual leveling
-#screen.
-y_min_inset: 0
-#The distance (in mm) from the minimum Y position used by the manual leveling
-#screen.
-y_max_inset: 300
-#The distance (in mm) from the maximum Y position used by the manual leveling
-#screen.
-x_min: 0
-#This can be used to provide a lower limit (in mm) to X moves done using the
-#touschreen. Movements will still be limited by your [stepper_x]
-#configuration values.
-x_max: 300
-#This can be used to provide an upper limit (in mm) to X moves done using the
-#touschreen. Movements will still be limited by your [stepper_x]
-#configuration values.
-y_min: 0 #   Same as x_min for the Y axis.
-y_max: 300 #   Same as x_max for the Y axis.
-z_min: 0 #   Same as x_min for the Z axis.
-z_max: 340 #   Same as x_max for the Z axis.
+>firmware: dgus_reloaded
+>update_interval: 1
+>machine_name: Sovol SV06 Plus
+>#How often to send data updates to the touchscreen.#volume: 75
+>brightness: 80
+>#The brightness for the touchscreen (as a value from 0 to 100).
+>#boot_sound:
+>#The index of the sound to play when booting. Defaults to being provided by
+>#the selected firmware.
+>#notification_sound:
+>#The index of the sound to play when certain events happened. Defaults to
+>#being provided by the selected firmware.
+>x_min_inset: 0
+>#The distance (in mm) from the minimum X position used by the manual leveling
+>#screen.
+>x_max_inset: 300
+>#The distance (in mm) from the maximum X position used by the manual leveling
+>#screen.
+>y_min_inset: 0
+>#The distance (in mm) from the minimum Y position used by the manual leveling
+>#screen.
+>y_max_inset: 300
+>#The distance (in mm) from the maximum Y position used by the manual leveling
+>#screen.
+>x_min: 0
+>#This can be used to provide a lower limit (in mm) to X moves done using the
+>#touschreen. Movements will still be limited by your [stepper_x]
+>#configuration values.
+>x_max: 300
+>#This can be used to provide an upper limit (in mm) to X moves done using the
+>#touschreen. Movements will still be limited by your [stepper_x]
+>#configuration values.
+>y_min: 0 #   Same as x_min for the Y axis.
+>y_max: 300 #   Same as x_max for the Y axis.
+>z_min: 0 #   Same as x_min for the Z axis.
+>z_max: 340 #   Same as x_max for the Z axis.
 
 ![moonraker4](img/moonraker4.png)
 
