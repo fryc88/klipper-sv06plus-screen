@@ -147,7 +147,7 @@ Another thing was solved. Now we need some firmware.
 
 # Compiling Klipper firmware for stock mainboard of printer
 
-In order to work, klipper needs to know which UART is being used for the screen, so you need to compile firmware for it. Easy enough. If you don't want to, you can use my pre-compiled file, however it might be helpful in the future to do it on your own.
+In order to work, klipper needs to know which UART is being used for the screen, so you need to compile firmware for it. Easy enough. If you don't want to, you can use my ![pre-compiled file](firmware5.bin), however it might be helpful in the future to do it on your own.
 
 Go back to SSH and open compilation menu and set everything as on the screenshot below - these settings are correct for SV06 Plus with Sovol board and if i remember right for SV01 Pro with stock Creality board as well, both based on GD32F103 chips:
 ```sh
