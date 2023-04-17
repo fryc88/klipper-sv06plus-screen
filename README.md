@@ -1,4 +1,4 @@
-# Sovol SV06 Plus stock screen with Klipper
+# Sovol SV06 Plus / SV01 Pro stock screen with Klipper
 
 Based on Desuuuu's [DGUS] screen firmware, originally for Creality printers  and  [Desuuuu/klipper] branch, also screen files recreated for T5l1 chip in vertical mode by Tomasz K [gbkwiat]
 
