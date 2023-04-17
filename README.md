@@ -42,7 +42,7 @@ You must change you Klipper branch to modified one, stock Klipper does not work 
 
 There are a couple of ways to do it, I'll show you only these ways how I have used it, which are kiauh script and mainsail os. You are more likely using one of these two ways, of course you follow only one of them, depending how you have installed your klipper before.
 
-## [kiauh] shell script version
+# [kiauh] shell script version
 Now it's the time when you have to go back to your host via SSH, same way as you have done to install Klipper originally.
 
 Your config files should be safe, however I advise you to make a backup of your printer.cfg, moonraker.cfg, etc. files before you proceed!
@@ -79,7 +79,7 @@ And select your correct number for gbkwiatt/klipper repository, in my case it is
 And that's it in the script for now, you are already with correct Klipper branch to get the screen working, BUT when you go to your Moonraker GUI, you will see DIRTY/INVALID red message next to Klipper & it will refuse to update - we will sort it in a minute.
 ![moonraker1](img/moonraker1.png)
 
-## Mainsail OS version
+# Mainsail OS version
 
 If you have installed the system via Raspberry PI imager as Other specific-purpose OS > 3d printing > Mainsail OS this part is for you.
 Your config files should be safe, however I advise you to make a backup of your printer.cfg, moonraker.cfg, etc. files before you proceed!
@@ -119,7 +119,7 @@ sudo reboot
 ```
 And that's it  for now, you are already with correct Klipper branch to get the screen working, BUT when you go to your Moonraker GUI, you will see DIRTY/INVALID red message next to Klipper & it will refuse to update - we will sort it in a minute.
 
-## Invalid/Dirty version of Klipper
+# Invalid/Dirty version of Klipper
 After finishing one of above methods, when you go to your Moonraker, in Machine details you will see this:
 
 ![moonraker1](img/moonraker1.png)
@@ -145,7 +145,7 @@ After reboot, when you open your GUI in the web browser, you must press "Invalid
 
 Another thing was solved. Now we need some firmware.
 
-## Compiling Klipper firmware for stock mainboard of printer
+# Compiling Klipper firmware for stock mainboard of printer
 
 In order to work, klipper needs to know which UART is being used for the screen, so you need to compile firmware for it. Easy enough. If you don't want to, you can use my pre-compiled file, however it might be helpful in the future to do it on your own.
 
@@ -179,7 +179,7 @@ This part of the process is the same as for normal Klipper, so you should alread
 Now, copy file from location to microSD card, I suggest up to 8GB, formatted to FAT32. Filename doesn't matter that much, BUT stock bootloaders on board won't flash the same filename as last time, so if you have named it for example firmware.bin, this time rename it to firmware2.bin or anything else.
 Put the microSD card into the printer, switch it on, give it 2-3 minutes, switch it off, remove card, turn printer back on, and now head to your GUI in browser, printer should be there, working again as before.
 
-## Screen firmware
+# Screen firmware
 Screen's firmware is pre-built, so you only need to flash it.
 Download DWIN_SET.zip from my github and extract it.
 Insert your microSD card, same as before - up to 8GB, FAT32 formatted into your computer.
@@ -259,7 +259,7 @@ To main home screen:
 
 And now it's nearly finished.
 
-## Screen commands required in start, end and cancel gcode
+# Screen commands required in start, end and cancel gcode
 
 Screen must get info from Klipper that you have started/ended/cancelled print. There is a couple of ways - if you are using Klipper macros, just add correct commands there. 
 It is
@@ -287,7 +287,7 @@ If you don't, you can add it in your preferred slicer, similar way as above in C
 ![slicer2](img/slicer2.png)
 
 
-## Happy end
+# Happy end
 And that's pretty much everything. You are all set, everything should work now. If something is not working, or your Klipper is not starting, then you need to go through all previous steps, to make sure you have done everything. If you got all the way down here, still happy enough, feel free to the use button below :)
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/fryc88)
