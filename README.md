@@ -287,7 +287,9 @@ If you don't, you can add it in your preffered slicer, similiar way as above in 
 
 ![slicer2](img/slicer2.png)
 
-And that's pretty much everything. You are all set, everything should work now. If something is not working, or your Klipper is not starting, then you need to go through all previous steps, to make sure you have done everything.
+
+## Happy end
+And that's pretty much everything. You are all set, everything should work now. If something is not working, or your Klipper is not starting, then you need to go through all previous steps, to make sure you have done everything. If you got all the way down here, still happy enough, feel free to use button below :)
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/fryc88)
 
