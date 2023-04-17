@@ -57,7 +57,6 @@ File more likely does not exist, so you must add this repo at the end of file
 https://github.com/gbkwiatt/klipper
 ```
 [![kiauh1](img/kiauh1.png)]
-[kiauh1]
 
 To save after making changes you press CTRL + X, it will ask if you want to save modified buffer and you confirm by pressing Y on keyboard.
 
@@ -67,16 +66,16 @@ To start script again in most of cases it will be:
 ```
 Now over there you will probably see some versions installed, etc., it might vary depending of your setup.
 
-[kiauh2]
+[![kiauh2](img/kiauh2.png)]
 
 Now you press 6 to go to settings:
-[kiauh3]
+[![kiauh3](img/kiauh3.png)]
 Then 1 for Custom repository
-[kiauh4]
+[![kiauh4](img/kiauh4.png)]
 And select your correct number for gbkwiatt/klipper repository, in my case it is 4, then it will ask if you want to proceed, so you confirm with Y and it will automatically swap repository to correct one for the screen.
-[kiauh5]
+[![kiauh5](img/kiauh5.png)]
 And that's it in the script for now, you are already with correct Klipper branch to get the screen working, BUT when you go to your Moonraker GUI, you will see DIRTY/INVALID red message next to Klipper & it will refuse to update - we will sort it in a minute.
-[moonraker1]
+[![moonraker1](img/moonraker1.png)]
 
 ## Mainsail OS version
 
@@ -93,12 +92,12 @@ cd ./
 ls
 ```
 and make sure klipper is listed there:
-[klipper1]
+[![klipper1](img/klipper1.png)]
 Let's remove it:
 ```sh
 sudo rm -R klipper
 ```
-[klipper2]
+[![klipper2](img/klipper2.png)]
 
 By default this OS contains git command, if not, you need to install it
 ```sh
@@ -109,7 +108,7 @@ Now, you need to pull correct branch of klipper which will take up to few minute
 ```sh
 git clone https://github.com/gbkwiatt/klipper
 ```
-[klipper3]
+[![klipper3](img/klipper3.png)]
 After its completed, reboot whole device
 ```sh
 sudo reboot
@@ -118,7 +117,7 @@ And that's it  for now, you are already with correct Klipper branch to get the s
 
 ## Invalid/Dirty version of Klipper
 After finishing one of above methods, when you go to your Moonraker, in Machine details you will see this:
-[moonraker1]
+[![moonraker1](img/moonraker1.png)]
 
 We don't want it, because it will prevent from updating Klipper. Let's solve it.
 This part is same for both previous ways.
@@ -128,13 +127,13 @@ sudo nano ./printer_data/systemd/moonraker.env
 ```
 It will open up text editor. Line might look different for different ways of installation, also if you have multiple Klipper instances "printer_data" might be named differently, but in most of cases above will be correct. You will know if path is different when it will open editor - if file is empty, then it means moonraker.env is stored elsewhere. If you have some content like on screenshot below, you are good to go.
 You need to turn on developer mode in Moonraker, by simply adding -v -g at end of MOONRAKER_ARGS line:
-[moonraker2]
+[![moonraker2](img/moonraker2.png)]
 After you finish, to save, press CTRL + X, then confirm with Y. Now you can do full reboot of system, or only reload Moonraker process.
 ```sh
 sudo reboot
 ```
 After reboot, when you open your GUI in web browser, you must press "Invalid" next to Klipper version and choose Soft recovery. A while later you will see confirmation and it should turn green Up-to-date again.
-[moonraker3]
+[![moonraker3](img/moonraker3.png)]
 
 Another things solved. Now we need some firmware.
 
@@ -147,7 +146,7 @@ Go back to SSH and open compilation menu and set everything as on the screenshot
 cd ./klipper
 make menuconfig
 ```
-[firmware1]
+[![firmware1](img/firmware1.png)]
 To save after setting above, press Q to quit, and when propted press Y to confirm.
 
 Now simply run command to compile firmware (it will take a while, depending of your device, can be up to couple of minutes):
@@ -155,13 +154,13 @@ Now simply run command to compile firmware (it will take a while, depending of y
 make
 ```
 You will see something similiar at end, most important is last line of it, that means our bin file with klipper has been created succesfully:
-[firmware2]
+[![firmware2](img/firmware2.png)]
 
 You need to open SFTP transmission now (via WINSCP for example) to download bin file to your computer. Use same credentials as for SSH:
-[sftp1]
+[![sftp1](img/sftp1.png)]
 
 Default path will be /home/pi/klipper/out/klipper.bin
-[sftp2]
+[![sftp2](img/sftp2.png)]
 Copy it to your computer, wherever you want. You don't need SFTP anymore, you can close it.
 This part of process is same as for normal Klipper, so you should already know how to do it, you are just flashing different file.
 Now, copy file from location to microSD card, I suggest up to 8GB, formatted to FAT32. Filename doesn't matter that much, BUT stock bootloader on board won't flash same filename as last time, so if you have named it for example firmware.bin, this time rename it to firmware2.bin or anything else.
@@ -172,15 +171,15 @@ Screen's firmware is pre-built, so you only need to flash it.
 Download DWIN_SET.zip from my github and extract it.
 Insert your microSD card, same as before - up to 8GB, FAT32 formatted into your computer.
 Copy folder DWIN_SET onto the card, it should be only folder on it, containing all files, like on screenshots below:
-[screen1]
-[screen2]
+[![screen1](img/screen1.png)]
+[![screen2](img/screen2.png)]
 
 You are ready to go further.
 
 Switch off printer, unplug and remove screen, then unscrew 4 socket cap screws on the back of screen, carefully take back plate off, release 3 plastic clips on the side and insert microSD card into the reader in the screen.
-[screen3]
+[![screen3](img/screen3.png)]
 Connect the screen back, turn on printer and after few seconds you will see blue screen showing files that are being flashed. It might take up to few minutes, so be patient. As last step you should see Flash CRC32 check: 000, it means it's done. You can switch off printer, remove microSD card from screen, reinstall back plate and attach it back to printer.
-[screen4]
+[![screen4](img/screen4.png)]
 All done for now. Now you must tell your Klipper that it's got this fancy screen back and working!
 
 ##Screen configuration for Klipper
@@ -226,14 +225,14 @@ y_max: 300 #   Same as x_max for the Y axis.
 z_min: 0 #   Same as x_min for the Z axis.
 z_max: 340 #   Same as x_max for the Z axis.
 
-[moonraker4]
+[![moonraker4](img/moonraker4.png)]
 
 Save settings & restart your Klipper.
 Your screen should turn from this:
-[screen5]
+[![screen5](img/screen5.png)]
 
 To main home screen:
-[screen6]
+[![screen6](img/screen6.png)]
 
 And now it's nearly finished.
 
@@ -244,18 +243,18 @@ It is
 > DGUS_PRINT_START
 
 for start
-[macro1]
+[![macro1](img/macro1.png)]
 > DGUS_PRINT_END
 
 for cancel and end
-[macro2]
-[macro3]
+[![macro2](img/macro2.png)]
+[![macro3](img/macro3.png)]
 
 Your macros might look a bit different, but it doesn't matter, just add it after gcode:, but remember about correct indentation of this command.
 
 If you don't, you can add it in your preffered slicer, similiar way as above in Custom Gcode section:
-[slicer1]
-[slicer2]
+[![slicer1](img/slicer1.png)]
+[![slicer2](img/slicer2.png)]
 
 And that's pretty much everything. You are all set, everything should work now. If something is not working, or your Klipper is not starting, then you need to go through all previous steps, to make sure you have done everything.
 
