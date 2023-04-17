@@ -1,6 +1,6 @@
 # Sovol SV06 Plus / SV01 Pro stock screen with Klipper
 
-Based on Desuuuu's [DGUS] screen firmware, originally for Creality printers  and  [Desuuuu/klipper] branch, also screen files recreated for T5l1 chip in vertical mode by Tomasz K [gbkwiat]
+Based on Desuuuu's [DGUS] screen firmware, originally for Creality printers  and  [Desuuuu/klipper] branch, also screen files recreated for T5l1 chip in vertical mode by Tomasz K [gbkwiatt]
 
 This is manual specifically for Sovol SV06 plus printer, however I have successfully used same screen firmware and most of config with SV01 Pro, and it can be used with SV04 as well (but there is another SV04 firmware for IDEX, on SV04 group), so if you want to try on other T5L1 chip based screens - feel free, it might work as well.
 
@@ -25,7 +25,7 @@ What would be nice to do:
 - add Caselight button
 
 # Start note
-I won't be explaining whole process how to install and setup Klipper(for now), because it already has been done by others, for example [![here ](https://github.com/bassamanator/Sovol-SV06-firmware/tree/sv06-plus)](https://github.com/bassamanator/Sovol-SV06-firmware/tree/sv06-plus), I will focus on details how to change branch and get it working with SV06 plus already with Klipper.
+I won't be explaining whole process how to install and setup Klipper(for now), because it already has been done by others, for example ![here](https://github.com/bassamanator/Sovol-SV06-firmware/tree/sv06-plus), I will focus on details how to change branch and get it working with SV06 plus already with Klipper.
 This firmware is provided without any warranty. You are responsible for your use of it, however I can try to help with some issues.
 
 # Requirements
