@@ -4,7 +4,7 @@ Based on Desuuuu's [DGUS] screen firmware, originally for Creality printers  and
 
 This is manual specifically for Sovol SV06 plus printer, however I have successfully used same screen firmware and most of config with SV01 Pro, and it can be used with SV04 as well (but there is another SV04 firmware for IDEX, on SV04 group), so if you want to try on other T5L1 chip based screens - feel free, it might work as well.
 
-## Features
+# Features
 
 Basic functions that are working fine:
 - Preheating, changing temperature during the print, changing fan speed, etc.
@@ -42,7 +42,7 @@ You must change you Klipper branch to modified one, stock Klipper does not work 
 
 There are a couple of ways to do it, I'll show you only these ways how I have used it, which are kiauh script and mainsail os. You are more likely using one of these two ways, of course you follow only one of them, depending how you have installed your klipper before.
 
-# [kiauh] shell script version
+## [kiauh] shell script version
 Now it's the time when you have to go back to your host via SSH, same way as you have done to install Klipper originally.
 
 Your config files should be safe, however I advise you to make a backup of your printer.cfg, moonraker.cfg, etc. files before you proceed!
@@ -79,7 +79,7 @@ And select your correct number for gbkwiatt/klipper repository, in my case it is
 And that's it in the script for now, you are already with correct Klipper branch to get the screen working, BUT when you go to your Moonraker GUI, you will see DIRTY/INVALID red message next to Klipper & it will refuse to update - we will sort it in a minute.
 ![moonraker1](img/moonraker1.png)
 
-# Mainsail OS version
+## Mainsail OS version
 
 If you have installed the system via Raspberry PI imager as Other specific-purpose OS > 3d printing > Mainsail OS this part is for you.
 Your config files should be safe, however I advise you to make a backup of your printer.cfg, moonraker.cfg, etc. files before you proceed!
