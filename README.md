@@ -195,7 +195,7 @@ Switch off printer, unplug and remove screen, then unscrew 4 socket cap screws o
 
 ![screen3](img/screen3.png)
 
-SV01 Pro screen is nearly identical & based on same chip
+SV01 Pro screen is nearly identical & based on same chip (top is SV06 Plus, bottom is SV01 Pro) 
 
 ![screen7](img/screen7.png)
 
