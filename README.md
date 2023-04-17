@@ -263,12 +263,14 @@ And now it's nearly finished.
 Screen must get info from Klipper that you have started/ended/cancelled print. There is couple of ways - if you are using Klipper macros, just add correct commands there. 
 It is
 > DGUS_PRINT_START
+
 for start
 
 ![macro1](img/macro1.png)
 
 and
 > DGUS_PRINT_END
+
 for cancel and end
 
 ![macro2](img/macro2.png)
