@@ -25,7 +25,7 @@ What would be nice to do:
 - add Caselight button
 
 # Start note
-I won't be explaining the whole process of how to install and set up Klipper(for now), because it has already been done by others, for example ![here](https://github.com/bassamanator/Sovol-SV06-firmware/tree/sv06-plus), I will focus on details on how to change branches and get it working with SV06 plus already with Klipper. This firmware is provided without any warranty. You are responsible for your use of it, however I can try to help with some issues.
+I won't be explaining the whole process of how to install and set up Klipper(for now), because it has already been done by others, for example [here], I will focus on details on how to change branches and get it working with SV06 plus already with Klipper. This firmware is provided without any warranty. You are responsible for your use of it, however I can try to help with some issues.
 
 # Requirements
 - Sovol SV06 plus, SV01 pro or similar printer that uses same screen and stock Creality or Sovol board, already with Klipper on it, so it requires some host device too, like Raspberry or Dell Wyse with Mainsail/Fluid + Moonraker
@@ -300,3 +300,4 @@ And that's pretty much everything. You are all set, everything should work now. 
    [Desuuuu/klipper]: <https://github.com/Desuuuu/klipper>
    [gbkwiatt]: <https://github.com/gbkwiatt>
    [kiauh]: <https://github.com/th33xitus/kiauh>
+   [here]: <https://github.com/bassamanator/Sovol-SV06-firmware/tree/sv06-plus>
