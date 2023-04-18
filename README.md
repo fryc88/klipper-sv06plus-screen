@@ -104,7 +104,7 @@ sudo rm -R klipper
 
 By default this OS contains git command, if not, you need to install it
 ```sh
-sudo apt update && sudo apt install git
+sudo apt update && sudo apt install git -y
 ```
 
 Now, you need to pull correct branch of klipper which will take up to few minutes:
