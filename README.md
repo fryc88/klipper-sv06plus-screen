@@ -205,7 +205,7 @@ Connect the screen back, turn on the printer and after a few seconds you will se
 
 All done for now. Now you must tell your Klipper that it's got this fancy screen back and working!
 
-##Screen configuration for Klipper
+## Screen configuration for Klipper
 
 Head back to your web browser and open your GUI. Printer should be back on and visible there, as I said before. If it is not, something went wrong or you forgot to reboot the host/restart process.
 
