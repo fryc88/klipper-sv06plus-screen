@@ -289,6 +289,23 @@ If you don't, you can add it in your preferred slicer, similar way as above in C
 
 ![slicer2](img/slicer2.png)
 
+# Beep via screen
+How to enable beep from screen - thanks to frostius who posted macro for it in 'issues' - simply add macro to your used macros and then call 'BEEP' in any action that you want:
+```sh
+[gcode_macro BEEP]
+description: BEEP I=3 DUR=200 FREQ=2000: Beep 3 times, for 200ms each, at 2kHz frequency.
+gcode:
+    # Parameters
+    {% set i = params.I|default(1)|int %}           ; Iterations (number of times to beep).
+    {% set dur = [params.DUR|default(100)|int,255] | min %}     ; Duration/wait of each beep in ms. Default 100ms.
+    ;{% set freq = params.FREQ|default(2000)|int %}  ; Frequency in Hz. Default 2kHz, not supported sv06+
+
+    {% for iteration in range(i|int) %}
+        M300 P{dur} 
+        G4 P{dur}
+    {% endfor %}
+```
+
 
 # Happy end
 And that's pretty much everything. You are all set, everything should work now. If something is not working, or your Klipper is not starting, then you need to go through all previous steps, to make sure you have done everything. If you got all the way down here, still happy enough, feel free to the use button below :)
