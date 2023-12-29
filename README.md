@@ -312,6 +312,10 @@ And that's pretty much everything. You are all set, everything should work now. 
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/fryc88)
 
+or
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/J3J2KICMC)
+
    [DGUS]: <https://github.com/Desuuuu/DGUS-reloaded-Klipper>
    [Desuuuu/klipper]: <https://github.com/Desuuuu/klipper>
    [gbkwiatt]: <https://github.com/gbkwiatt>
