@@ -8,7 +8,7 @@ This is manual specifically for Sovol SV06 plus printer, however I have successf
 
 Basic functions that are working fine:
 - Preheating, changing temperature during the print, changing fan speed, etc.
-- Auto home, manual move X/Y/Z, 
+- Auto home(with endstops, not sensorless homing), manual move X/Y/Z, 
 - PID tuning for bed/extruder via screen
 - Filament retract/extrude when not printing
 - SAVE_CONFIG
